@@ -51,6 +51,3 @@ Error code | Details | Fix
 
 
 <https://github.com/TheEvilSocks/tatsu>
-
-
-<https://www.convertcsv.com/json-to-csv.htm>
