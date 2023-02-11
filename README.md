@@ -1,6 +1,6 @@
-# tatsuRanks
+# tatsuRankExport
 
-A simple tool to retrieve a JSON file of the Tatsu leaderboard in a server.
+A simple tool to export Tatsu ranked score leaderboards for a server in CSV or JSON format.
 
 Tatsu bot and the owner of the API key must both be in the server for this to work.
 
@@ -14,15 +14,23 @@ The frequency of these logs can be changed in `src/getRankings.ts:7` under LOG_F
 
 ---
 
+## Prerequisites:
+
+- Download this repository (`git clone git@github.com:lilyMrt/tatsuRankExport.git`, `curl https://github.com/lilyMrt/tatsuRankExport.git` or download the zip through GitHub directly)
+- A terminal with [node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (check with `node -v` and `npm -v`)
+- A Tatsu API key, obtained with the `t!apikey` command in a server or DMs with [Tatsu bot](https://tatsu.gg)
+
+---
+
 
 ## How to use:
 
-1. Obtain a Tatsu API key (t!apikey in a server with Tatsu)
-2. Replace `SERVER_ID_HERE` and `TATSU_API_KEY`
+1. Open the folder location in your terminal
+2. Find the file index.ts and update `SERVER_ID_HERE` and `TATSU_API_KEY`
 3. _Optional:_ Change the output format in FILE_TYPE (csv or json) and the OUTPUT_FILE name
 4. Run `npm i` to install dependencies
 5. Run the script with `npm start` or `npm run script`
-6. Output json or csv file will go to ./output/ or your specified location.
+6. Output json or csv file will go to `./output/server_rankings` or your specified location.
 
 
 ---
