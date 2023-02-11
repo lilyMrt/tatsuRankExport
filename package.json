@@ -1,0 +1,39 @@
+{
+ "name": "tatsu-ranks",
+ "version": "1.0.0",
+ "description": "A Typescript tool for fetching Tatsu server leaderboards.",
+ "main": "./index.js",
+ "scripts": {
+  "start": "npx ts-node ./index.ts",
+  "script": "ts-node-script ./index.ts",
+  "prepublishOnly": "npm run clean && npm run build",
+  "clean": "rimraf dist",
+  "build": "tsc"
+ },
+ "keywords": [
+  "tatsu",
+  "tatsumaki",
+  "api",
+  "typings",
+  "discord",
+  "discordapp",
+  "ranking",
+  "server",
+  "rank"
+ ],
+ "author": "lilyMrt",
+ "license": "MIT",
+ "bugs": {
+  "url": "https://github.com/lilyMrt/tatsuRanks/issues"
+ },
+ "homepage": "https://github.com/lilyMrt/tatsuRanks#readme",
+ "dependencies": {
+  "tatsu": "^1.1.0"
+ },
+ "devDependencies": {
+  "@types/node": "^18.13.0",
+  "rimraf": "^3.0.2",
+  "ts-node": "^10.9.1",
+  "typescript": "^4.9.5"
+ }
+}
